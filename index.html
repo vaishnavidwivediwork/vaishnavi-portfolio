@@ -3,166 +3,638 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vaishnavi Dwivedi — IT student exploring cybersecurity, digital forensics and creative technology.">
-  <meta name="theme-color" content="#0a0c10">
-  <title>Vaishnavi Dwivedi | Portfolio</title>
+  <meta name="description" content="Vaishnavi Dwivedi — First-year B.Sc. IT student specializing in Cyber Security and Digital Forensics at Vidhyadeep University. Portfolio of creative design, technical foundations, and professional skills.">
+  <meta name="author" content="Vaishnavi Dwivedi">
+  <title>Vaishnavi Dwivedi | Technology, Security &amp; Design</title>
+
+  <!-- Typography: Editorial Grotesk & Technical Monospace -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-theme="dark">
-  <header class="navbar">
+<body>
+
+  <!-- Sticky Top Editorial Navigation -->
+  <header class="site-header" id="navbar">
     <div class="nav-container">
-      <a class="nav-logo" href="#home" aria-label="Vaishnavi Dwivedi home">V<span>.</span>D</a>
-      <nav class="nav-links" id="navMenu" aria-label="Main navigation">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#contact">Contact</a>
+      <a href="#hero" class="nav-brand" aria-label="Vaishnavi Dwivedi Home">
+        <span class="brand-monogram">VD</span>
+        <span class="brand-text">VAISHNAVI DWIVEDI</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link nav-cta-mobile">Contact</a>
       </nav>
+
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Switch theme">☼</button>
-        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <a href="#contact" class="btn-nav-desktop">Let's Connect &rarr;</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <!-- Hero Section: Asymmetric Editorial Magazine Layout -->
+    <section class="hero-section" id="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <p class="eyebrow">Hello, I'm Vaishnavi</p>
-          <h1 class="hero-title">Building my future at the intersection of <span>technology, security &amp; creativity.</span></h1>
-          <p class="hero-subtitle">B.Sc. IT student | Cyber Security &amp; Digital Forensics</p>
-          <p class="hero-description">I’m learning how technology works, how digital systems can be protected, and how thoughtful design can make ideas easier to understand.</p>
-          <p class="hero-meta">Ankleshwar, Gujarat, India · Vidhyadeep University</p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
-            <a class="btn btn-outline" href="#contact">Get in touch</a>
+          <div class="hero-meta-badge">
+            <span class="status-marker"></span>
+            <span>PORTFOLIO / 2026 &mdash; ANKLESHWAR, GUJARAT, INDIA</span>
           </div>
-        </div>
-        <div class="hero-image">
-          <div class="portrait-wrapper">
-            <img src="assets/profile.jpg" alt="Portrait of Vaishnavi Dwivedi" onerror="this.style.display='none'; this.parentElement.classList.add('portrait-fallback');">
-            <span class="portrait-initials" aria-hidden="true">VD</span>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="about section-alt" id="about">
-      <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">A little about me</p>
-          <h2 class="section-title">Curious by nature. <span>Learning by doing.</span></h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-highlight">
-            <h3>Technology with a creative perspective.</h3>
-            <p>I enjoy combining logical thinking, visual creativity and communication to solve problems and keep learning.</p>
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="editorial-emphasis">Vaishnavi Dwivedi.</span>
+          </h1>
+
+          <p class="hero-introduction">
+            A technology student, creative thinker and aspiring cybersecurity professional, exploring the intersection of technology, creativity and digital innovation.
+          </p>
+
+          <div class="hero-standing">
+            <span class="standing-label">CURRENT STATUS:</span>
+            <span class="standing-text">First-Year B.Sc. IT &bull; Cyber Security &amp; Digital Forensics &bull; Vidhyadeep University</span>
           </div>
-          <div class="about-content">
-            <p>I’m a first-year B.Sc. IT student specialising in Cyber Security and Digital Forensics. I’m currently building my foundations in programming, operating systems and cybersecurity concepts.</p>
-            <p>Alongside my studies, I have experience in graphic design and online/offline sales. These experiences have helped me develop communication, customer understanding and creative problem-solving skills.</p>
-            <div class="about-facts">
-              <div class="about-fact"><strong>2026–2030</strong><span>Expected degree timeline</span></div>
-              <div class="about-fact"><strong>3 months</strong><span>Sales experience</span></div>
-              <div class="about-fact"><strong>Cybersecurity</strong><span>Area of study</span></div>
-              <div class="about-fact"><strong>Always learning</strong><span>Mindset</span></div>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary">Explore My Work &darr;</a>
+            <a href="assets/resume.pdf" class="btn-secondary resume-trigger" download="Vaishnavi_Dwivedi_Resume.pdf">Download Resume &nearr;</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <div class="portrait-wrapper">
+              <img src="assets/profile.jpg" alt="Vaishnavi Dwivedi Portrait" class="portrait-image" id="profileImage" onerror="this.onerror=null; this.parentElement.classList.add('portrait-fallback');">
+              <div class="portrait-placeholder-fallback">
+                <span class="fallback-monogram">VD</span>
+                <span class="fallback-caption">[ assets/profile.jpg ]</span>
+              </div>
+            </div>
+            <div class="portrait-tag">
+              <span>FIG 01. / PROFILE</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills">
+    <!-- Section 1: About Me -->
+    <section class="section about-section" id="about">
       <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">What I'm building</p>
-          <h2 class="section-title">Skills &amp; interests</h2>
-          <p class="section-description">A growing skill set across technology, creativity and communication.</p>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card"><h3>Technical foundations</h3><div class="skill-tags"><span class="skill-tag">C Programming</span><span class="skill-tag">Computer Fundamentals</span><span class="skill-tag">Operating Systems</span><span class="skill-tag">Cybersecurity Basics</span></div></article>
-          <article class="skill-card"><h3>Creative skills</h3><div class="skill-tags"><span class="skill-tag">Graphic Design</span><span class="skill-tag">Social Media Creatives</span><span class="skill-tag">Visual Presentation</span></div></article>
-          <article class="skill-card"><h3>Professional skills</h3><div class="skill-tags"><span class="skill-tag">Communication</span><span class="skill-tag">Customer Interaction</span><span class="skill-tag">Sales Support</span><span class="skill-tag">Teamwork</span></div></article>
-          <article class="skill-card"><h3>Currently learning</h3><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Linux</span><span class="skill-tag">Networking</span><span class="skill-tag">Digital Forensics</span></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects section-alt" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Selected work</p>
-          <h2 class="section-title">Projects &amp; learning notes</h2>
-          <p class="section-description">A place for practical work and learning projects as I develop my technical skills. New projects will be added as they are completed.</p>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card"><p class="project-number">01 / LEARNING</p><h3>C Programming Practice</h3><p>Beginner exercises exploring variables, data types, operators, conditions and basic problem-solving in C.</p><div class="project-tags"><span>C</span><span>Programming basics</span></div></article>
-          <article class="project-card"><p class="project-number">02 / LEARNING</p><h3>Operating Systems Notes</h3><p>Organised study notes covering operating-system concepts, processes, threads, memory and the role of a kernel.</p><div class="project-tags"><span>OS</span><span>Computer fundamentals</span></div></article>
-          <article class="project-card"><p class="project-number">03 / CREATIVE</p><h3>Graphic Design Practice</h3><p>Visual experiments and social-media creative work focused on clean layouts, readable typography and clear communication.</p><div class="project-tags"><span>Graphic design</span><span>Visual communication</span></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <div class="section-header"><p class="eyebrow">Practical experience</p><h2 class="section-title">Experience</h2></div>
-        <article class="experience-card">
-          <p class="experience-date">Approximately 3 months</p>
-          <h3>Sales Associate</h3>
-          <p class="experience-company">Online &amp; Offline Sales</p>
-          <p>Supported sales and customer interactions across online and offline channels, building practical communication, product-presentation and customer-service skills.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="education section-alt" id="education">
-      <div class="container">
-        <div class="section-header"><p class="eyebrow">Academic background</p><h2 class="section-title">Education</h2></div>
-        <article class="education-card">
-          <p class="education-university">Vidhyadeep University · Gujarat, India</p>
-          <h3>B.Sc. Information Technology</h3>
-          <p>Specialisation: Cyber Security &amp; Digital Forensics</p>
-          <p class="edu-description">First-year student · 2026–2030 (expected)</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="section-header"><p class="eyebrow">Let's connect</p><h2 class="section-title">Have an opportunity or an idea?</h2><p class="section-description">I’m open to learning opportunities, internships and meaningful collaborations.</p></div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Get in touch</h3>
-            <p>Feel free to reach out by email or connect with me on LinkedIn.</p>
-            <p class="contact-detail"><strong>Email:</strong> <a href="mailto:vaishnavidwivedi.work@gmail.com">vaishnavidwivedi.work@gmail.com</a></p>
-            <p class="contact-detail"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vaishnavi-dwivedi-3a84a8413" target="_blank" rel="noopener noreferrer">View my profile ↗</a></p>
-            <p class="contact-detail"><strong>Location:</strong> Ankleshwar, Gujarat, India</p>
+        <div class="section-label">01 / ABOUT ME</div>
+        
+        <div class="about-grid">
+          <div class="about-headline-col">
+            <h2 class="editorial-statement">
+              Building strong technical foundations while combining analytical inquiry, creative communication, and practical understanding.
+            </h2>
           </div>
-          <form class="contact-form" id="contactForm">
-            <div class="form-group"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required></div>
-            <div class="form-group"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
-            <div class="form-group"><label for="subject">Subject</label><input id="subject" name="subject" type="text" placeholder="What would you like to discuss?" required></div>
-            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Write your message..." required></textarea></div>
-            <button class="btn btn-primary" type="submit">Prepare email ↗</button>
-            <p class="form-status" id="formNotification" role="status" aria-live="polite"></p>
-          </form>
+
+          <div class="about-narrative-col">
+            <p class="narrative-lead">
+              I am a first-year undergraduate student pursuing a Bachelor of Science in Information Technology with a specialization in Cyber Security and Digital Forensics at Vidhyadeep University, Gujarat.
+            </p>
+            <p>
+              My academic interests center on understanding how digital architectures function, how security principles protect information, and how digital evidence is methodically investigated. Alongside my technical studies, I have hands-on experience in graphic design and developing social media creatives, allowing me to present ideas with visual clarity and structured composition.
+            </p>
+            <p>
+              In addition to technical and creative pursuits, my background includes approximately three months of online and offline sales experience. This practical customer-facing work taught me active listening, clear verbal communication, and how to understand practical user and client requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Skills -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-label">02 / SKILLS &amp; CAPABILITIES</div>
+        
+        <div class="skills-intro">
+          <h2 class="section-title">Areas of Focus &amp; Active Study</h2>
+          <p class="section-description">
+            A transparent overview separating competencies I actively apply from technical disciplines I am currently learning as a first-year undergraduate.
+          </p>
+        </div>
+
+        <div class="skills-editorial-grid">
+          <!-- Category 1: Creative Skills -->
+          <div class="skill-category">
+            <div class="category-header">
+              <span class="category-index">[CAT_01]</span>
+              <h3 class="category-name">Creative Skills</h3>
+            </div>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <span class="item-name">Graphic Design</span>
+                <span class="item-tag">Applied</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Social Media Creatives</span>
+                <span class="item-tag">Applied</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Visual Design</span>
+                <span class="item-tag">Applied</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Professional Skills -->
+          <div class="skill-category">
+            <div class="category-header">
+              <span class="category-index">[CAT_02]</span>
+              <h3 class="category-name">Professional Skills</h3>
+            </div>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <span class="item-name">Communication</span>
+                <span class="item-tag">Practical</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Online Sales</span>
+                <span class="item-tag">Practical</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Offline Sales</span>
+                <span class="item-tag">Practical</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Customer Interaction</span>
+                <span class="item-tag">Practical</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Technical Skills -->
+          <div class="skill-category">
+            <div class="category-header">
+              <span class="category-index">[CAT_03]</span>
+              <h3 class="category-name">Technical Skills</h3>
+            </div>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <span class="item-name">C Programming</span>
+                <span class="item-tag">Academic</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Operating Systems</span>
+                <span class="item-tag">Academic</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Linux Fundamentals</span>
+                <span class="item-tag">Academic</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Cybersecurity Fundamentals</span>
+                <span class="item-tag">Academic</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Digital Forensics Fundamentals</span>
+                <span class="item-tag">Academic</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Currently Learning -->
+          <div class="skill-category active-learning-category">
+            <div class="category-header">
+              <span class="category-index">[CAT_04]</span>
+              <h3 class="category-name">Currently Learning</h3>
+            </div>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <span class="item-name">Python</span>
+                <span class="item-tag learning-tag">In Progress</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Networking</span>
+                <span class="item-tag learning-tag">In Progress</span>
+              </li>
+              <li class="skill-item">
+                <span class="item-name">Cybersecurity Concepts</span>
+                <span class="item-tag learning-tag">In Progress</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Selected Work / Portfolio Gallery -->
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-label">03 / SELECTED WORK</div>
+
+        <div class="work-header-row">
+          <div>
+            <h2 class="section-title">Portfolio Gallery</h2>
+            <p class="section-description">
+              A curated selection of creative design assets, visual explorations, and foundational academic technical exercises.
+            </p>
+          </div>
+
+          <!-- Category Filter Bar -->
+          <div class="filter-bar" role="tablist" aria-label="Portfolio Category Filter">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="graphic-design" role="tab" aria-selected="false">Graphic Design</button>
+            <button class="filter-btn" data-filter="social-media" role="tab" aria-selected="false">Social Media</button>
+            <button class="filter-btn" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+            <button class="filter-btn" data-filter="technical" role="tab" aria-selected="false">Technical</button>
+            <button class="filter-btn" data-filter="other" role="tab" aria-selected="false">Other</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Project 01: Graphic Design -->
+          <article class="project-item" data-category="graphic-design">
+            <div class="project-media-frame">
+              <img src="assets/projects/project-01.jpg" alt="Graphic Design Study — Editorial Layout Placeholder" class="project-image" onerror="this.onerror=null; this.parentElement.classList.add('media-fallback');">
+              <div class="media-fallback-display">
+                <span class="fallback-index">PROJ / 01</span>
+                <span class="fallback-path">assets/projects/project-01.jpg</span>
+              </div>
+              <button class="expand-lightbox-btn" data-title="Editorial Layout Study (Placeholder)" data-category="Graphic Design" data-src="assets/projects/project-01.jpg" data-desc="Demonstration placeholder showcasing typographic contrast, negative space distribution, and structured grid alignment for digital publications." aria-label="Expand image preview for Editorial Layout Study">
+                [+] Expand View
+              </button>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Graphic Design</span>
+              <h3 class="project-title">Editorial Layout Study</h3>
+              <p class="project-desc">Illustrative demonstration placeholder exploring typographic contrast, negative space distribution, and structured grid alignment.</p>
+            </div>
+          </article>
+
+          <!-- Project 02: Social Media Creatives -->
+          <article class="project-item" data-category="social-media">
+            <div class="project-media-frame">
+              <img src="assets/projects/project-02.jpg" alt="Social Media Creative Formats Placeholder" class="project-image" onerror="this.onerror=null; this.parentElement.classList.add('media-fallback');">
+              <div class="media-fallback-display">
+                <span class="fallback-index">PROJ / 02</span>
+                <span class="fallback-path">assets/projects/project-02.jpg</span>
+              </div>
+              <button class="expand-lightbox-btn" data-title="Social Media Creative Formats (Placeholder)" data-category="Social Media Creatives" data-src="assets/projects/project-02.jpg" data-desc="Demonstration placeholder representing promotional social media creative compositions designed for cross-platform engagement." aria-label="Expand image preview for Social Media Creative Formats">
+                [+] Expand View
+              </button>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Social Media Creatives</span>
+              <h3 class="project-title">Social Media Creative Formats</h3>
+              <p class="project-desc">Illustrative demonstration placeholder representing promotional creative layouts focused on strong focal composition and type hierarchy.</p>
+            </div>
+          </article>
+
+          <!-- Project 03: Branding & Visual Design -->
+          <article class="project-item" data-category="branding">
+            <div class="project-media-frame">
+              <img src="assets/projects/project-03.jpg" alt="Minimal Brand Identity System Placeholder" class="project-image" onerror="this.onerror=null; this.parentElement.classList.add('media-fallback');">
+              <div class="media-fallback-display">
+                <span class="fallback-index">PROJ / 03</span>
+                <span class="fallback-path">assets/projects/project-03.jpg</span>
+              </div>
+              <button class="expand-lightbox-btn" data-title="Minimal Brand Identity Concept (Placeholder)" data-category="Branding & Visual Design" data-src="assets/projects/project-03.jpg" data-desc="Demonstration placeholder showcasing a monochrome identity concept exploring clean logotype development and stationery grid systems." aria-label="Expand image preview for Minimal Brand Identity Concept">
+                [+] Expand View
+              </button>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Branding &amp; Visual Design</span>
+              <h3 class="project-title">Minimal Brand Identity Concept</h3>
+              <p class="project-desc">Illustrative demonstration placeholder modeling a conceptual identity system utilizing strict geometric ratios and monochromatic typography.</p>
+            </div>
+          </article>
+
+          <!-- Project 04: Technical Projects -->
+          <article class="project-item" data-category="technical">
+            <div class="project-media-frame technical-frame">
+              <div class="terminal-mockup">
+                <div class="terminal-header">
+                  <span class="terminal-dot"></span>
+                  <span class="terminal-title">c_programming_lab.c</span>
+                </div>
+                <div class="terminal-body">
+                  <code>
+                    <span class="code-comment">/* Illustrative Academic Example: Memory &amp; Pointers */</span><br>
+                    #include &lt;stdio.h&gt;<br>
+                    #include &lt;stdlib.h&gt;<br>
+                    int main(void) {<br>
+                    &nbsp;&nbsp;int *buffer = malloc(sizeof(int) * 8);<br>
+                    &nbsp;&nbsp;printf("Status: Allocated at %p
+", (void*)buffer);<br>
+                    &nbsp;&nbsp;free(buffer);<br>
+                    &nbsp;&nbsp;return 0;<br>
+                    }
+                  </code>
+                </div>
+              </div>
+              <button class="expand-lightbox-btn" data-title="C Programming &amp; Systems Lab (Illustrative Sample)" data-category="Technical Projects" data-terminal="true" data-desc="An illustrative academic exercise sample showing foundational C programming syntax, pointer handling, and memory allocation." aria-label="Expand view for C Programming & Systems Lab">
+                [+] Expand View
+              </button>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Technical Projects</span>
+              <h3 class="project-title">C Programming &amp; Systems Lab</h3>
+              <p class="project-desc">An illustrative academic example modeling foundational coursework exercises in structured code, pointer arithmetic, and basic memory management.</p>
+            </div>
+          </article>
+
+          <!-- Project 05: Other Creative Work -->
+          <article class="project-item" data-category="other">
+            <div class="project-media-frame">
+              <div class="editorial-abstract-card">
+                <span class="abstract-caption">EDITORIAL POSTER SERIES</span>
+                <span class="abstract-sub">MONOCHROME &bull; 2026</span>
+              </div>
+              <button class="expand-lightbox-btn" data-title="Editorial Typography Poster Series (Placeholder)" data-category="Other Creative Work" data-abstract="true" data-desc="Illustrative demonstration placeholder representing an experimental typography poster series exploring asymmetric margin rhythms and negative space." aria-label="Expand view for Editorial Typography Poster Series">
+                [+] Expand View
+              </button>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Other Creative Work</span>
+              <h3 class="project-title">Typography Poster Series</h3>
+              <p class="project-desc">Demonstration concept placeholder examining how scale contrast, intentional line length, and whitespace influence reading rhythm.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Experience -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-label">04 / EXPERIENCE</div>
+
+        <div class="experience-layout">
+          <div class="experience-header-col">
+            <h2 class="section-title">Commercial &amp; Practical Experience</h2>
+            <p class="section-description">
+              Real-world engagement developing customer-facing skills and practical communication.
+            </p>
+          </div>
+
+          <div class="experience-detail-col">
+            <div class="experience-block">
+              <div class="exp-title-row">
+                <div>
+                  <h3 class="exp-role">Sales Associate</h3>
+                  <div class="exp-context">Online and Offline Sales</div>
+                </div>
+                <div class="exp-period">~3 Months Experience</div>
+              </div>
+
+              <div class="exp-responsibilities">
+                <div class="resp-item">
+                  <span class="resp-bullet">&bull;</span>
+                  <div>
+                    <strong>Customer Interaction:</strong> Engaged directly with clients across physical and digital settings to understand their inquiries and present solutions clearly.
+                  </div>
+                </div>
+                <div class="resp-item">
+                  <span class="resp-bullet">&bull;</span>
+                  <div>
+                    <strong>Sales Support &amp; Coordination:</strong> Supported day-to-day sales conversations, product explanations, and assisted customers throughout the purchase process.
+                  </div>
+                </div>
+                <div class="resp-item">
+                  <span class="resp-bullet">&bull;</span>
+                  <div>
+                    <strong>Communication:</strong> Developed disciplined verbal and written communication techniques, practicing clarity, attentive listening, and structured presentation.
+                  </div>
+                </div>
+                <div class="resp-item">
+                  <span class="resp-bullet">&bull;</span>
+                  <div>
+                    <strong>Customer Assistance:</strong> Handled questions, provided product details, and ensured a positive, respectful customer experience throughout interactions.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Education -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-label">05 / EDUCATION</div>
+
+        <div class="education-layout">
+          <div class="education-summary-col">
+            <h2 class="section-title">Academic Foundation</h2>
+            <p class="section-description">
+              Formal undergraduate degree program in information technology, security, and digital investigation.
+            </p>
+          </div>
+
+          <div class="education-detail-col">
+            <div class="education-entry">
+              <div class="edu-top-line">
+                <span class="edu-badge">DEGREE IN PROGRESS</span>
+                <span class="edu-timeline">2026 &mdash; 2030 (Expected)</span>
+              </div>
+
+              <h3 class="edu-degree">Bachelor of Science in Information Technology (B.Sc. IT)</h3>
+              <div class="edu-specialization">Specialization: Cyber Security and Digital Forensics</div>
+              <div class="edu-institution">Vidhyadeep University, Gujarat, India</div>
+
+              <div class="edu-body">
+                <p>
+                  Current Academic Status: <strong>First-Year Undergraduate Student</strong>
+                </p>
+                <p>
+                  Program curriculum introduces computer fundamentals, structured programming languages, operating systems architectures, networking essentials, and foundational frameworks of cybersecurity and digital forensics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Resume -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <div class="section-label">06 / CURRICULUM VITAE</div>
+
+        <div class="resume-banner">
+          <div class="resume-text">
+            <h2 class="resume-title">Curriculum Vitae</h2>
+            <p class="resume-desc">
+              A comprehensive document detailing my academic profile, active technical studies, creative skills, and commercial sales background.
+            </p>
+          </div>
+
+          <div class="resume-cta-wrap">
+            <a href="assets/resume.pdf" class="btn-primary resume-trigger" download="Vaishnavi_Dwivedi_Resume.pdf" id="resumeDownloadBtn">
+              Download Resume (PDF) &darr;
+            </a>
+            <span class="file-path-note">Expected path: assets/resume.pdf</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-label">07 / CONTACT</div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <h2 class="contact-heading">Let's Connect.</h2>
+            <p class="contact-intro">
+              I am open to discussions regarding academic projects, cybersecurity internships, creative design collaborations, or professional networking. Feel free to reach out directly through any of the channels below.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-row">
+                <span class="channel-label">EMAIL</span>
+                <a href="mailto:vaishnavidwivedi.work@gmail.com" class="channel-value">vaishnavidwivedi.work@gmail.com</a>
+              </div>
+              <div class="channel-row">
+                <span class="channel-label">LINKEDIN</span>
+                <a href="https://www.linkedin.com/in/vaishnavi-dwivedi-3a84a8413" target="_blank" rel="noopener noreferrer" class="channel-value">linkedin.com/in/vaishnavi-dwivedi-3a84a8413 &nearr;</a>
+              </div>
+              <div class="channel-row">
+                <span class="channel-label">GITHUB</span>
+                <a href="https://github.com/vaishnavidwivediwork" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/vaishnavidwivediwork &nearr;</a>
+              </div>
+              <div class="channel-row">
+                <span class="channel-label">LOCATION</span>
+                <span class="channel-static">Ankleshwar, Gujarat, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <div class="form-wrapper">
+              <div class="form-title-bar">
+                <span>DIRECT MESSAGE FORM</span>
+                <span class="form-sub-note">[Generates Mailto Draft]</span>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-field">
+                  <label for="senderName">Your Name</label>
+                  <input type="text" id="senderName" name="name" placeholder="First &amp; Last Name" required autocomplete="name">
+                </div>
+
+                <div class="form-field">
+                  <label for="senderEmail">Email Address</label>
+                  <input type="email" id="senderEmail" name="email" placeholder="name@example.com" required autocomplete="email">
+                </div>
+
+                <div class="form-field">
+                  <label for="messageSubject">Subject</label>
+                  <input type="text" id="messageSubject" name="subject" placeholder="Collaboration / Inquiry" required>
+                </div>
+
+                <div class="form-field">
+                  <label for="messageBody">Message</label>
+                  <textarea id="messageBody" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary form-submit-btn">
+                  Prepare Email Draft &rarr;
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <!-- Section 8: Editorial Footer -->
+  <footer class="site-footer">
     <div class="container footer-container">
-      <p>© <span id="currentYear"></span> Vaishnavi Dwivedi. Built with curiosity.</p>
-      <div class="footer-links"><a href="#home">Back to top ↑</a><a href="mailto:vaishnavidwivedi.work@gmail.com">Email</a><a href="https://www.linkedin.com/in/vaishnavi-dwivedi-3a84a8413" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <span class="footer-logo">VAISHNAVI DWIVEDI</span>
+          <p class="footer-bio">Technology Student &bull; Cyber Security &amp; Digital Forensics &bull; Creative Design</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-external-links">
+          <a href="https://www.linkedin.com/in/vaishnavi-dwivedi-3a84a8413" target="_blank" rel="noopener noreferrer">LinkedIn &nearr;</a>
+          <a href="https://github.com/vaishnavidwivediwork" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a>
+          <a href="mailto:vaishnavidwivedi.work@gmail.com">Email &nearr;</a>
+        </div>
+
+        <div class="footer-copyright">
+          <span>&copy; <span id="copyrightYear">2026</span> VAISHNAVI DWIVEDI. STRICT MONOCHROME EDITION.</span>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <!-- Reusable Fullscreen Image Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Project Preview Lightbox">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog">
+      <div class="lightbox-header">
+        <div class="lightbox-meta">
+          <span class="lightbox-category" id="lightboxCategory">CATEGORY</span>
+          <span class="lightbox-divider">/</span>
+          <span class="lightbox-title" id="lightboxTitle">Project Title</span>
+        </div>
+        <button class="lightbox-close" id="lightboxCloseBtn" aria-label="Close Lightbox Preview">[ESC] Close &times;</button>
+      </div>
+
+      <div class="lightbox-body" id="lightboxBody">
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
+        <div class="lightbox-content-custom" id="lightboxCustomContent"></div>
+      </div>
+
+      <div class="lightbox-footer">
+        <p class="lightbox-desc" id="lightboxDesc">Detailed project description goes here.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reusable Pure Black & White System Notification Modal -->
+  <div class="system-modal" id="systemModal" role="alertdialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalHeading" aria-describedby="modalBody">
+    <div class="system-modal-backdrop" id="systemModalBackdrop"></div>
+    <div class="system-modal-card">
+      <div class="modal-header-strip">
+        <span class="modal-indicator">[SYSTEM NOTICE]</span>
+        <button class="modal-close-trigger" id="modalCloseBtn" aria-label="Close notification">&times;</button>
+      </div>
+      <div class="modal-content-area">
+        <h3 class="modal-heading" id="modalHeading">Notification</h3>
+        <p class="modal-body" id="modalBody">Notification details will appear here.</p>
+      </div>
+      <div class="modal-footer-area">
+        <button class="btn-primary modal-action-btn" id="modalDismissBtn">Acknowledge</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript File -->
   <script src="script.js"></script>
 </body>
 </html>
